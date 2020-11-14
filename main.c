@@ -166,9 +166,51 @@ else if (zadanie==5){
 }	
 }
 else if (zadanie==6){ 
-char 
-printf ("czy lubisz programowac? (t/n)\n")	
+char pyt;
+int x=0;
+int c=0;
+printf ("czy lubisz programowac? (t/n)\n");
+scanf ("%c", &pyt);
+if (pyt==0x0A){
+	scanf ("%c", &pyt);
 }
-
+printf ("dales %c ",pyt);
+while (pyt != 't'){
+	printf ("czy lubisz programowac? (t/n)\n");
+	scanf ("%c", &pyt);
+	c++;
+	if (c=10){
+		printf ("NIE DENERWOJ MNIE! czy lubisz programowac? (t/n)\n");
+		scanf ("%c", &pyt);
+		c++;
+	
+	}
+	if (c>=20){
+		printf("¦¦¦¦¦¦¦-------------\n¦¦¦¦------------------\n¦¦----------------------\n¦¦------------------------\n¦??----------------------??\n¦--------------------------\n??------------------------??\n----------------------------\n---------------------?-----??\n??---------?---------------??\n¦----------------------------\n¦??------------------?-------\n¦¦??--?----------------------\n¦¦¦----?--------?----------??\n¦¦¦??-----------------------\n¦¦¦??--?-------------------\n¦¦¦??---?-----------------\n¦¦¦-----------------------\n¦¦??--------------------\n¦---------------------\n----------------------------\n");
+	}
+}
+if (pyt=='t'){printf("\n\n\n\n\nciesze sie bo ja tez :) ");
+}
+}
+else if (zadanie==7){
+	float a,b=0;
+	printf("podaj liczbe, 0 to koniec i podsumuje ci wszysko\n");
+	scanf ("%f",&a);
+	while (a!=0){
+		b=b+a;
+		printf ("podaj kolejna\n");
+		scanf ("%f",&a);
+	}
+	printf ("lacznie to wszytsko to %f",b);
+	
+	
+	
+}
+else if (zadanie==8)	
+	
+	
+	
+	
+	
 	return 0;
 }
